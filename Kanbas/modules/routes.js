@@ -7,7 +7,6 @@ function ModuleRoutes(app) {
         const course = await coursesDao.findByCourseId(courseId)
         const newModule = {...req.body, course: course.id}
         const module = await dao.createModule(newModule);
-        console.log(module)
         res.json(module);
     }
 
