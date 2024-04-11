@@ -5,7 +5,6 @@ const moduleSchema = new mongoose.Schema({
     course: String,
     lessons: [
         {
-            id: { type: String, required: true, unique: true },
             name: String, 
             description: String,
             module: String
